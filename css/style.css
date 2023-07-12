@@ -12,9 +12,16 @@
    ========================================================================== */
 
 html {
+  background-color: #fff;
   color: #222;
-  font-size: 1em;
+  font-size: 1.2em;
   line-height: 1.4;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /*
@@ -34,131 +41,69 @@ html {
   text-shadow: none;
 }
 
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
-
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden,
-[hidden] {
-  display: none !important;
+body {
+  padding: 2em;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+h1 {
+  font-size: 1.6em;
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
 
-.visually-hidden {
-  border: 0;
-  clip: rect(0, 0, 0, 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
+p {
+  margin-top: 0;
+}
+
+.no-list-style {
   padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  /* 1 */
-}
-
-/*
- * Extends the .visually-hidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visually-hidden.focusable:active,
-.visually-hidden.focusable:focus {
-  clip: auto;
-  height: auto;
   margin: 0;
-  overflow: visible;
-  position: static;
-  white-space: inherit;
-  width: auto;
+  list-style: none;
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-  visibility: hidden;
+.name {
+  font-size: 1em;
+  color: #222222be;
+  font-weight: 500;
 }
 
-/*
- * Clearfix: contain floats
- *
- * The use of `table` rather than `block` is only necessary if using
- * `::before` to contain the top-margins of child elements.
- */
-
-.clearfix::before,
-.clearfix::after {
-  content: "";
-  display: table;
+.description {
+  font-size: 1.6em;
 }
 
-.clearfix::after {
-  clear: both;
+a {
+  color: #005b99;
+}
+
+a:hover {
+  color: #005b99bf;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color: #fff;
+    background: #222;
+  }
+
+  .name {
+    color: #ffffffbf;
+  }
+
+  a {
+    color: #93c0f9;
+  }
+
+  a:hover {
+    color: #accefa;
+  }
 }
 
 /* ==========================================================================
