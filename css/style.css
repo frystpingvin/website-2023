@@ -46,8 +46,11 @@ html {
    ========================================================================== */
 
 body {
-  padding: 2em;
   min-height: 100svh;
+}
+
+.about {
+  padding: 2em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -105,6 +108,17 @@ a:hover {
   a:hover {
     color: #accefa;
   }
+}
+
+.screenshots {
+  display: flex;
+  overflow-x: auto;
+}
+
+.screenshot {
+  display: flex;
+  flex: 0 0 auto;
+  height: 32em;
 }
 
 /* ==========================================================================
