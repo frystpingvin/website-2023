@@ -113,12 +113,18 @@ a:hover {
 .screenshots {
   display: flex;
   overflow-x: auto;
+  padding: 0 1em 1em 1em;
 }
 
 .screenshot {
   display: flex;
   flex: 0 0 auto;
   height: 32em;
+  border-radius: 1em;
+
+  &:not(:last-child) {
+    margin-right: 1em;
+  }
 }
 
 /* ==========================================================================
