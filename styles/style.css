@@ -138,6 +138,11 @@ a:hover {
   }
 }
 
+.screenshot > img
+.screenshot > source {
+  border-radius: inherit;
+}
+
 @media only screen and (min-width: 35em) {
   .screenshot {
     height: 28em;
