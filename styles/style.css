@@ -138,8 +138,8 @@ a:hover {
   }
 }
 
-.screenshot img
-.screenshot source {
+.screenshot > img,
+.screenshot > source {
   border-radius: inherit;
 }
 
