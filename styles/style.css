@@ -64,13 +64,12 @@ h1 {
 }
 
 h2 {
-  font-size: 1em;
-  margin: 0;
+  font-size: 1.6em;
+  font-weight: bold;
 }
 
 h3 {
   font-size: 1em;
-  font-weight: 500;
   margin: 0;
 }
 
@@ -90,8 +89,12 @@ p {
   font-weight: 500;
 }
 
-.description {
+.text-large {
   font-size: 1.6em;
+}
+
+.text-bold {
+  font-weight: 700;
 }
 
 a {
@@ -119,6 +122,10 @@ a:hover {
   a:hover {
     color: #accefa;
   }
+}
+
+.horizontal-padding {
+  padding: 0 1em;
 }
 
 .screenshots {
@@ -151,6 +158,23 @@ a:hover {
 
 .screenshot-links {
   padding: 1em;
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0e2d3;
+  border-radius: 1em;
+  padding: 1em;
+  max-width: 28em;
+
+  &:not(:last-child) {
+    margin-right: 1em;
+  }
+}
+
+.quote blockquote {
+  flex-grow: 1;
 }
 
 /* ==========================================================================

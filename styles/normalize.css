@@ -347,3 +347,10 @@ template {
 [hidden] {
   display: none;
 }
+
+/**
+ * Remove blockquote margin.
+ */
+blockquote {
+  margin: 0;
+}
