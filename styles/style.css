@@ -105,30 +105,11 @@ a:hover {
   color: #005b99bf;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color: #fff;
-    background: #222;
-  }
-
-  .name {
-    color: #ffffffbf;
-  }
-
-  a {
-    color: #93c0f9;
-  }
-
-  a:hover {
-    color: #accefa;
-  }
-}
-
 .horizontal-padding {
   padding: 0 1em;
 }
 
-.screenshots {
+.collection {
   display: flex;
   overflow-x: auto;
   padding: 0 1em 1em 1em;
@@ -167,6 +148,7 @@ a:hover {
   border-radius: 1em;
   padding: 1em;
   max-width: 28em;
+  min-width: 20em;
 
   &:not(:last-child) {
     margin-right: 1em;
@@ -244,3 +226,30 @@ a:hover {
   }
 }
 
+
+/* ==========================================================================
+   Dark mode styles.
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color: #fff;
+    background: #222;
+  }
+
+  .name {
+    color: #ffffffbf;
+  }
+
+  a {
+    color: #93c0f9;
+  }
+
+  a:hover {
+    color: #accefa;
+  }
+
+  .quote {
+    background-color: #4e4e4e;
+  }
+}
